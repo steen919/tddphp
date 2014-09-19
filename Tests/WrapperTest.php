@@ -10,20 +10,17 @@ require_once dirname(__FILE__) . '/../Wrapper.php';
 
 class WrapperTest extends PHPUnit_Framework_TestCase {
 
-    function testCanCreateAWrapper() {
-        $wrapper = new Wrapper();
+    function setUp() {
+        $this->wrapper = new Wrapper();
     }
 
     function testItShouldWrapAnEmptyString() {
-        $wrapper = new Wrapper();
-        $this->assertEquals('', $wrapper->wrap(''));
+        $this->assertEquals('', $this->wrapper->wrap(''));
     }
 
     function testItDoesNotWrapAShortEnoughWord() {
-        $wrapper = new Wrapper();
-        $this->assertEquals('word', $wrapper->wrap('word', 5));
+        $this->assertEquals('word', $this->wrapper->wrap('word', 5));
     }
-
 
 }
  
