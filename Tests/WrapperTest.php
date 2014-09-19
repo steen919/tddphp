@@ -24,7 +24,6 @@ class WrapperTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals('word', $wrapper->wrap('word', 5));
     }
 
-    /*test*/
 
 }
  
