@@ -10,6 +10,8 @@ require_once dirname(__FILE__) . '/../Wrapper.php';
 
 class WrapperTest extends PHPUnit_Framework_TestCase {
 
+    private $wrapper;
+
     function setUp() {
         $this->wrapper = new Wrapper();
     }
